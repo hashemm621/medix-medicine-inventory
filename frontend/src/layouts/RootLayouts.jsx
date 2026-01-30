@@ -1,9 +1,22 @@
 import React from 'react';
+import Navbar from '../components/shared/Navbar';
+import { Outlet } from 'react-router';
+import Footer from '../components/shared/Footer';
 
 const RootLayouts = () => {
     return (
         <div>
-            <h1>Root Layout</h1>
+            <header>
+                <Navbar/>
+            </header>
+
+            <main>
+                <Outlet/>
+            </main>
+
+            <footer>
+                <Footer/>
+            </footer>
                 
         </div>
     );
